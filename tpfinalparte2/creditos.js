@@ -15,6 +15,9 @@ class creditos{
     textAlign(CENTER, CENTER);
     text("AXOLOTL GAME", width / 2, height / 3);
     
+    textSize(20);
+    text("Mové al Axolotl de izquierda a derecha para agarrar la comida", width / 2, height / 3 + 40);
+    
     textSize(24);
     fill(213, 125, 170);
     rect(this.botonX, this.botonY, this.botonAncho, this.botonAlto);

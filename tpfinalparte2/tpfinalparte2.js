@@ -4,8 +4,8 @@
  *Tp1Final-Parte2
  *Comision 1
  *Video Explicacion:
- https:/
- 
+    https://youtu.be/32h5edIZ7kQ?si=mzXJF3KARz5BNm7k
+    
 */
  
 let jogo;
