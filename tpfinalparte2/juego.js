@@ -43,11 +43,10 @@ class juego {
     }
   }
   
-   teclaPress(keyCode){
+  teclaPress(keyCode){
     this.axolotl.teclaPress(keyCode);
   }
   teclaSolt(keyCode) {
     this.axolotl.teclaSolt(keyCode);
     }
-  
 }

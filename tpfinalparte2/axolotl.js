@@ -9,9 +9,11 @@ class axolotl{
   }
 
   dibujar(){
-    fill(200)
-    rectMode(CENTER);
-    rect(this.posX, this.posY, this.ancho,this.alto)
+    let escala = 1.8;
+    noFill()
+    noStroke()
+    rect(this.posX-this.ancho/2,this.posY-this.alto/2,this.ancho,this.alto);
+    image(imAxo,this.posX-(this.ancho *escala)/2,this.posY-(this.alto*escala)/2,this.ancho*escala,this.alto*escala);
   }
   
   teclaPress(keyCode){
@@ -35,8 +37,5 @@ class axolotl{
     this.posX = constrain(this.posX, this.ancho / 2, width - this.ancho / 2);
   }
   
-  estaVivo(){
-  
-  }
   
 }

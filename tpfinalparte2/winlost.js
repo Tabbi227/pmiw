@@ -4,6 +4,7 @@ class winlost{
   this.comida = comida;
   this.axolotl = axolotl
   this.contador = 0;
+  this.boton= null;
   }
   
   comidaCaida(){
@@ -27,18 +28,34 @@ class winlost{
     textSize(40);
     textAlign(CENTER,CENTER);
     text("GANASTE", width/2,height/2);
+    this.mostrarBoton();
     noLoop();
   } 
   pierde(){
     textSize(40);
     textAlign(CENTER,CENTER);
     text("PERDISTE", width/2,height/2);
+    this.mostrarBoton();
     noLoop();
   }
   
   sumarPuntos(){
     this.contador++;
   }
-    
+/// 
+  mostrarBoton(){
+    this.boton = createButton('Volver a Jugar');
+    this.boton.position(width / 2 - 50, height / 2 + 50); 
+  }
+///
+  reiniciarJuego(){
+    this.vidas = 5;
+    this.contador = 0;
+    for (let i = 0; i < this.comida.length; i++){
+      this.comida[i].reset();
+    }
+    this.boton.remove();
+    loop();
+  }
     
 }
