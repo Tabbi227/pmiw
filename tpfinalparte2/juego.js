@@ -4,7 +4,16 @@ class juego {
     this.crearAxolotl();
     this.crearComida();
     this.vidas = new winlost(5, this.comida, this.axolotl);
-     
+  }
+  
+  mostrarCreditos() {
+    this.creditos.mostrarPantalla();
+  }
+
+  iniciarJuego() {
+    this.crearAxolotl();
+    this.crearComida();
+    this.vidas = new winlost(5, this.comida, this.axolotl);
   }
   
     crearComida(){
