@@ -33,7 +33,7 @@ class creditos{
   detectarClick() {
     if (mouseX > this.botonX && mouseX < this.botonX + this.botonAncho && mouseY > this.botonY && mouseY < this.botonY + this.botonAlto) {
       this.activa = false;
-      pantallaJuego = true;
+      jogo.activa=true;
     }
     if ( mouseX > this.botonX && mouseX < this.botonX + this.botonAncho && mouseY > this.botonDOSY && mouseY < this.botonDOSY + this.botonAlto) { 
       this.activa = false;

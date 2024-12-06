@@ -1,4 +1,5 @@
 /*
+
  *Candela Di Lorenzo 120296/0
  *Agustin Tabbita 119151/7
  *Tp1Final-Parte2
@@ -13,7 +14,6 @@ let imFondo;
 let imAxo;
 let pantallaCreditos;
 let pantallaInfo;
-let pantallaJuego = false;
 
 function preload(){
   imFondo = loadImage("data/fondo.png");
@@ -32,7 +32,7 @@ function draw() {
       pantallaCreditos.mostrar();
   } else if (pantallaInfo.activa) {
       pantallaInfo.mostrar();
-  } else if (pantallaJuego){
+  } else if (jogo.activa){
       image(imFondo, 0, 0, width, height);
       jogo.dibujar();
   }
@@ -48,7 +48,7 @@ function mousePressed() {
   if (pantallaCreditos.activa) {
     pantallaCreditos.detectarClick();
    }else if (pantallaInfo.activa) {
-    pantallaInfo.detectarClick();
+    pantallaInfo.detectarClickVolver();
    }else if (mouseX > jogo.vidas.botonX && mouseX < jogo.vidas.botonX + jogo.vidas.botonAncho && mouseY > jogo.vidas.botonY && mouseY < jogo.vidas.botonY + jogo.vidas.botonAlto) {
       jogo.vidas.reiniciarJuego();
    }

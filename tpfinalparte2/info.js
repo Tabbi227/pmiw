@@ -23,10 +23,10 @@ mostrar() {
     text("Volver", this.botonX + this.botonAncho / 2, this.botonY + this.botonAlto / 2);
   }
 
-  detectarClick() {
+  detectarClickVolver() {
     if (mouseX > this.botonX && mouseX < this.botonX + this.botonAncho && mouseY > this.botonY && mouseY < this.botonY + this.botonAlto) {
       this.activa = false;
       pantallaCreditos.activa = true;
     }
-  }
-}
+  } 
+} 

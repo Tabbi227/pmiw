@@ -4,6 +4,7 @@ class juego {
     this.crearAxolotl();
     this.crearComida();
     this.vidas = new winlost(5, this.comida, this.axolotl);
+    this.activa = false;
   }
   
   mostrarCreditos() {
